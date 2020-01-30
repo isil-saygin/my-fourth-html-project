@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flex Layout ve Z-index Kullanımı</title>
+  <style>
+    .flex-container {
+    display: flex;
+    background:url("https://cdn.sporx.com/img/59/2018/0x0-unlu-youtuber-danla-bilice-soru-zcgm_cover.jpg") ;
+    height:422px;
+    width:682;
+    background-repeat:no-repeat;
+    font-family: 'Caveat', cursive;
+    margin: 0px ;
+    padding: 0px;
+    font-size: 30px;
+    color:#000;
+    }
+    p{
+    margin: 5px ;
+    padding: 0px;
+    border:2px solid;
+    vertical-align: middle;
+    background-color:#FFF;
+    text-align:center;
+    }
+    .ozet{
+    position:relative;
+    left:276px;
+    width:150px;
+    height:200px;
+    }
+    .container {
+    display: flex;
+    margin: 5px;
+    padding: 0px;
+    font-size: 30px;
+    color:#000;
+    }
+    img{
+    position:absolute;
+    top:500px;
+    left:0px;
+    z-index:-1;
+    }
+    .iki{
+    position:relative;
+    top:398px;
+    left:550px;
+    border: 4px dotted;
+    background: #000;
+    width:100px;
+    color: #fff;
+    margin:5px;
+    padding:2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div><p>Danla Bilic Style</p></div>  
+    <div><p class="ozet">Asıl adı Neslihan Damla Akdemir 5 Ekim 1994</p></div>
+  </div> 
+  <div class="container">
+    <img src="https://cdn.sporx.com/img/59/2018/0x0-unlu-youtuber-danla-bilice-soru-zcgm_cover.jpg">
+    <p class="iki">Danla Bilic</p>
+  </div>
+</body>
+</html>
